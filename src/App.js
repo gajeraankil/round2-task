@@ -44,7 +44,6 @@ const App = () => {
 
   const handleUpdate = (index) => {
     const selectedData = submitData[index];
-    console.log("selectedData", selectedData);
     formik.setValues(selectedData);
     setEditIndex(index);
   };
