@@ -88,13 +88,15 @@ const App = () => {
 
       <table>
         <thead>
-          <th>Name</th>
-          <th>Email</th>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
         </thead>
         <tbody>
           {submitData.map((item, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
                 <td>
